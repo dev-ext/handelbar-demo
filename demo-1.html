@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--[if IE 7]> <html class="no-js ie ie7"> <![endif]-->
+<!--[if IE 8]><html class="no-js ie ie8"> <![endif]-->
+<!--[if IE 9]><html class="no-js ie ie9"> <![endif]-->
+<!--[if gt IE 9]>
+<!--> <html class="no-js gtIe9"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title></title>
+<meta name="description" content="This is HTML5 Boilerplate.">
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+<link href="style.css" rel="stylesheet" type="text/css">
+<!--[if lt IE 9]><script type="text/javascript" src="js/html5shiv.js"></script><![endif]-->
+</head>
+<body class="drw">
+<div class="centerAlign baseD1">
+  <div class="row" id="demo-1">
+    <pre class="row sample-1 data"></pre>
+    <script id="some-template" type="text/x-handlebars-template">
+  <table>
+    <thead>
+      <th>Username</th>
+      <th>Real Name</th>
+      <th>Email</th>
+    </thead>
+    <tbody>
+      {{#users}}
+        <tr>
+          <td>{{username}}</td>
+          <td>{{firstName}} {{lastName}}</td>
+          <td>{{email}}</td>
+        </tr>
+      {{/users}}
+    </tbody>
+  </table>
+</script>
+    <div class="output-1 row handelbar" id="content-placeholder"></div>
+    <script type="text/x-handlebars-template" id="demo2">
+	{{#title}}
+	{{id}}:{{text}}<br/>
+	{{/title}}
+	</script>
+    <div class="row demo-2"></div>
+    <script type="text/x-handlebars-template" id="demo3">
+	{{#imgdata}}
+	<img src="{{url}}" alt="" />
+	{{/imgdata}}
+	</script>
+    
+    <div class="demo3"></div>
+  </div>
+</div>
+<script type="text/javascript" src="js/data.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
